@@ -8,6 +8,8 @@ Escreva um ou dois  parágrafo resumindo o objetivo do seu projeto.
 * Rafael Guimarães Drumond
 * Pedro Henrique Ferreira Gonzaga
 * Vitor Gabriel de Souza Borges
+* Arthur Caldeira Lima
+* Victor Ricci
 
 ## Professores responsáveis
 
