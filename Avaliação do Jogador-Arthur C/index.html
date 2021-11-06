@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link rel="stylesheet" href="style.css">
+<script src="coment.js"></script>
+    <title>Avaliação do Jogador</title>
+</head>
+<body>
+    <h1>Comentário e Avaliação de um Jogador</h1>
+    <div class="container">
+        <div class="row" style="margin-top:40px;">
+            <div class="col-md-6">
+            <div class="well well-sm">
+                <div class="text-right">
+                    <a class="btn btn-success btn-green" href="#reviews-anchor" id="open-review-box">Deixe um comentário</a>
+                </div>
+            
+                <div class="row" id="post-review-box" style="display:none;">
+                    <div class="col-md-12">
+                        <form accept-charset="UTF-8" action="" method="post">
+                            <input id="ratings-hidden" name="rating" type="hidden"> 
+                            <textarea class="form-control animated" cols="50" id="new-review" name="comment" placeholder="Enter your review here..." rows="5"></textarea>
+            
+                            <div class="text-right">
+                                <div class="stars starrr" data-rating="0"></div>
+                                <a class="btn btn-danger btn-sm" href="#" id="close-review-box" style="display:none; margin-right: 10px;">
+                                <span class="glyphicon glyphicon-remove"></span>Cancelar</a>
+                                <a href="sucesso.html" class="btn btn-success btn-lg" type="submit">Enviar</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div> 
+             
+            </div>
+        </div>
+    </div>
+</body>
+</html>
