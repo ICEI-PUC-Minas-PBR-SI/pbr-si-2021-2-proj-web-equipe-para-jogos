@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link rel="stylesheet" href="style.css">
+<script src="coment.js"></script>
+    <title>Avaliação do Jogador</title>
+</head>
+<body>
+    <h1>Comentário e Avaliação de um Jogador</h1>
+    <div class="container">
+        <div class="row" style="margin-top:40px;">
+            <div class="col-md-6">
+            <div class="well well-sm">
+                <div class="text-right">
+                    <a class="btn btn-success btn-green" href="#reviews-anchor" id="open-review-box">Deixe um comentário</a>
+                </div>
+                <div class="row" id="post-review-box" style="display:none;">
+                    <div class="col-md-12">
+                        <form accept-charset="UTF-8" action="" method="post">
+                            <input id="ratings-hidden" name="rating" type="hidden"> 
+                            <textarea class="form-control animated" cols="50" id="new-review" name="comment" placeholder="Escreva seu comentário" rows="5"></textarea>       
+                            <div class="text-right">
+                                <a href="javascript:void(0)" onclick="Avaliar(1)">
+                                    <img src="img/star0.png" id="s1"></a>
+                            
+                                <a href="javascript:void(0)" onclick="Avaliar(2)">
+                                    <img src="img/star0.png" id="s2"></a>
+                            
+                                <a href="javascript:void(0)" onclick="Avaliar(3)">
+                                    <img src="img/star0.png" id="s3"></a>
+                            
+                                <a href="javascript:void(0)" onclick="Avaliar(4)">
+                                    <img src="img/star0.png" id="s4"></a>
+                            
+                                <a href="javascript:void(0)" onclick="Avaliar(5)">
+                                    <img src="img/star0.png" id="s5"></a>
+                                <p id="rating">0</p>
+                                <a class="btn btn-danger btn-sm" href="#" id="close-review-box" style="display:none; margin-right: 10px;"  onclick="Limpar()">
+                                <span class="glyphicon glyphicon-remove"></span>Cancelar</a>
+                                <button class="btn btn-success btn-lg" type="button" onclick="Contar()">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div> 
+            </div>
+        </div>
+    </div>
+    <p >Avaliação:</p>
+    <p id="soma">0</p>
+    <p >Comentário:</p>
+    <p id="comentario">a</p>
+</body>
+</html>
